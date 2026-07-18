@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adang_supply</title>
+    <meta name="description" content="adang_supply menyediakan solusi suplai barang berkualitas untuk kebutuhan bisnis dan personal." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="supply.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a href="#home" class="brand">adang_supply</a>
+        <button class="menu-toggle" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content" id="home">
+        <div>
+          <p class="eyebrow">Sumber pasokan terpercaya</p>
+          <h1>Solusi suplai yang cepat, aman, dan efisien.</h1>
+          <p class="hero-text">
+            Kami membantu bisnis dan individu mendapatkan kebutuhan harian dengan kualitas terbaik dan harga kompetitif.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Lihat Produk</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Kami</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Kenapa memilih kami?</h3>
+          <ul>
+            <li>Pengiriman cepat</li>
+            <li>Stok terjamin</li>
+            <li>Harga transparan</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">Tentang kami</p>
+          <h2>Bangun kebutuhanmu dengan dukungan penuh.</h2>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h3>Profesional</h3>
+            <p>Tim kami siap membantu memilih produk yang paling cocok dengan kebutuhan Anda.</p>
+          </article>
+          <article>
+            <h3>Terpercaya</h3>
+            <p>Setiap barang dipilih dengan standar kualitas yang konsisten untuk menjaga kepuasan pelanggan.</p>
+          </article>
+          <article>
+            <h3>Fleksibel</h3>
+            <p>Melayani kebutuhan skala kecil maupun besar, dari toko kecil hingga usaha berkembang.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section products" id="products">
+        <div class="section-heading">
+          <p class="eyebrow">Produk unggulan</p>
+          <h2>Berbagai pilihan produk gorengan.</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card" data-name="Denim Pants" data-price="650000">
+            <img src="DEXTER.jpg" alt="Denim pants SNSB artikel Dexter" />
+            <h3>Denim Pants</h3>
+            <p>SNSB Artikel Dexter</p>
+            <span>Rp 650.000</span>
+            <button class="btn btn-primary add-to-cart">Tambah ke Keranjang</button>
+          </article>
+          <article class="product-card" data-name="CFHO" data-price="350000">
+            <img src="CFHO.jpg" alt="CFHO produk" />
+            <h3>CFHO</h3>
+            <p>SNSB Artikel CFHO</p>
+            <span>Rp 350.000</span>
+            <button class="btn btn-primary add-to-cart">Tambah ke Keranjang</button>
+          </article>
+          <article class="product-card" data-name="ChambreDeLaVain" data-price="550000">
+            <img src="CHMB.jpg" alt="ChambreDeLaVain" />
+            <h3>ChambreDeLaVain</h3>
+            <p>Chmb basic.</p>
+            <span>Rp 550.000</span>
+            <button class="btn btn-primary add-to-cart">Tambah ke Keranjang</button>
+          </article>
+          <article class="product-card" data-name="Classic Jacket" data-price="650000">
+            <img src="preface.jpg" alt="preface" />
+            <h3>Preface Jacket</h3>
+            <p>Preface jacket </p>
+            <span>Rp 650.000</span>
+            <button class="btn btn-primary add-to-cart">Tambah ke Keranjang</button>
+          </article>
+          <article class="product-card" data-name="Street Bag" data-price="400000">
+            <img src="rokage x 407.jpg" alt="rokagex407" />
+            <h3>ROKAGE X 407</h3>
+            <p>ROKAGE X 407</p>
+            <span>Rp 400.000</span>
+            <button class="btn btn-primary add-to-cart">Tambah ke Keranjang</button>
+          </article>
+          <article class="product-card" data-name="Signature Sneakers" data-price="720000">
+            <img src="telepati.jpg" alt="telepati che" />
+            <h3>telepati che</h3>
+            <p>zipper telepati che</p>
+            <span>Rp 720.000</span>
+            <button class="btn btn-primary add-to-cart">Tambah ke Keranjang</button>
+          </article>
+        </div>
+
+        <div class="cart-section">
+          <div class="cart-card">
+            <div class="cart-header">
+              <h3>Keranjang Belanja</h3>
+              <span id="cartCount">0 item</span>
+            </div>
+            <ul id="cartItems"></ul>
+            <div class="cart-summary">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="subtotal">Rp 0</strong>
+              </div>
+              <div class="summary-row">
+                <span>Ongkir</span>
+                <strong id="shipping">Rp 0</strong>
+              </div>
+              <div class="summary-row total-row">
+                <span>Total</span>
+                <strong id="total">Rp 0</strong>
+              </div>
+              <div class="payment-group">
+                <label><input type="radio" name="payment" value="COD" checked /> COD</label>
+                <label><input type="radio" name="payment" value="Transfer Bank" /> Transfer Bank</label>
+                <label><input type="radio" name="payment" value="QRIS" /> QRIS</label>
+              </div>
+              <button type="button" class="btn btn-primary checkout-btn" id="checkoutBtn">Bayar Sekarang</button>
+              <p id="checkoutMessage" class="form-message"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Kontak</p>
+          <h2>Siap memulai? Hubungi kami sekarang.</h2>
+        </div>
+        <div class="contact-wrapper">
+          <form id="contactForm">
+            <input type="text" name="name" placeholder="Nama Anda" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <textarea name="message" rows="4" placeholder="Pesan Anda" required></textarea>
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            <p id="formMessage" class="form-message"></p>
+          </form>
+          <div class="contact-info">
+            <h3>Informasi</h3>
+            <p>Email: hello@adang-supply.com</p>
+            <p>Telepon: 083153409296</p>
+            <p>Instagram: @adang_supply</p>
+            <p>Alamat: Bandung, Indonesia</p>
+            <a href="https://wa.me/6283153409296" target="_blank" rel="noopener" class="btn btn-primary whatsapp-btn">Hubungi via WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> adang_supply. All rights reserved.</p>
+    </footer>
+
+    <script src="supply.js"></script>
+  </body>
+</html>
